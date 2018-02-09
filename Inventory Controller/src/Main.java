@@ -8,6 +8,7 @@ public class Main
 {
 	public static void main(String [] args) 
 	{
+
 		String employeePassword = "password";
 		boolean isEmployee = false;
 		
@@ -30,7 +31,6 @@ public class Main
 			}
 		}
 		
-		// The name of the file to open.
         String fileName = "HereItIs.txt";
 
         
