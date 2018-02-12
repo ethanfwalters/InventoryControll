@@ -12,7 +12,7 @@ public class searchFunction
 			
 			while(user.contains(arrayListName))
 				{
-				
+				//hgg
 				}
 
 			}
