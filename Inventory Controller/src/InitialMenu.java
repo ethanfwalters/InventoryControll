@@ -68,4 +68,3 @@ public class InitialMenu
 			}
 		else 
 		}
-}
