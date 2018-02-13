@@ -3,7 +3,7 @@ import java.util.*;
 public class InitialMenu
 	{
 		public static int eOrB;
-		public static String  password = "Hello";
+		public static String  password = "Hello"; 
 	public static void firstQuestion()
 	{
 		try
