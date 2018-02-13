@@ -68,7 +68,7 @@ public class InitialMenu
 			}
 		else 
 			{
-			
+			searchFunction.main(args);
 			}
 		}
 	}
