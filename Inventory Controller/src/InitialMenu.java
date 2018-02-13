@@ -44,7 +44,7 @@ public class InitialMenu
 			}
 		else if(eOrB == 0)
 			{
-				// this will call the method for the buyers new method
+				searchFunction.search();
 			}
 		else
 			{

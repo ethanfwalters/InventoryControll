@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class searchFunction
 	{
 		static ArrayList <Stuff> inventory = new ArrayList <Stuff>();
-		public static void main(String[] args)
+		public static void search()
 			{
 			Scanner user = new Scanner(System.in);
 			System.out.println("Hello! Anything you would like to search for today?");
