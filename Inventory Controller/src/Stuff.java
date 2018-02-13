@@ -5,12 +5,16 @@ public class Stuff
 	private String name;
 	private int amount;
 	private int cost;
-public Stuff (int s, String n, int a, int c)
+	private int sold;
+	private int storeCost;
+public Stuff (int s, String n, int a, int c, int so, int sc)
 	{
 	SKU = s;
 	name = n;
 	amount = a;
 	cost = c;
+	sold = so;
+	storeCost = sc;
 	}
 public int getSKU()
 	{
@@ -43,5 +47,21 @@ public int getCost()
 public void setCost(int cost)
 	{
 	this.cost = cost;
+	}
+public int getSold()
+	{
+	return sold;
+	}
+public void setSold(int sold)
+	{
+	this.sold = sold;
+	}
+public int getStoreCost()
+	{
+	return storeCost;
+	}
+public void setStoreCost(int storeCost)
+	{
+	this.storeCost = storeCost;
 	}
 }
