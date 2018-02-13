@@ -57,5 +57,15 @@ public class InitialMenu
 	public static void buyerExperience()
 		{
 		ArrayList <Stuff> cart = new ArrayList <Stuff>();
+		System.out.println("Would you like to ");
+		System.out.println("1). Shop from the inventory");
+		System.out.println("2). Search our database");
+		Scanner userIn = new Scanner(System.in);
+		int choice = userIn.nextInt();
+		if (choice == 1)
+			{
+			
+			}
+		else 
 		}
 }
