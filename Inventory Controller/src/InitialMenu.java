@@ -24,20 +24,18 @@ public class InitialMenu
 		if(eOrB == 1)
 			{
 				try
-					{
+				{
 				Scanner pass = new Scanner(System.in);
 				System.out.println("What is the password?");
 				int thePass = pass.nextInt();
 				if(thePass == 1234)
-					{
-						// This will call the method to run the rest of the employee code.
-					}
+						EmployeeMenu.intialMenu(); // This will call the method to run the rest of the employee code.
 				else
 					{
 						System.out.println("That is not the right password.");
 						firstQuestion();
 					}
-					}
+				}
 				catch(InputMismatchException exc)
 					{
 						System.out.println("You need to enter a number.");
