@@ -5,7 +5,7 @@ public class InventoryAdd
 	{
 	static ArrayList <Stuff> inventory = new ArrayList <Stuff>();
 	public static void addArray() throws IOException
-		{
+		{//hi
 		Scanner file = new Scanner(new File ("HereItIs.txt"));
 		while(file.hasNextLine())
 			{
