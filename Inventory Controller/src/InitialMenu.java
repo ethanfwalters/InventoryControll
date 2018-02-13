@@ -46,7 +46,7 @@ public class InitialMenu
 			}
 		else if(eOrB == 0)
 			{
-				// this will call the method for the buyers new method
+			buyerExperience();
 			}
 		else
 			{
@@ -54,4 +54,8 @@ public class InitialMenu
 				firstQuestion();
 			}
 	}
+	public static void buyerExperience()
+		{
+		ArrayList <Stuff> cart = new ArrayList <Stuff>();
+		}
 }
