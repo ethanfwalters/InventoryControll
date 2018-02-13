@@ -24,18 +24,20 @@ public class InitialMenu
 		if(eOrB == 1)
 			{
 				try
-				{
+					{
 				Scanner pass = new Scanner(System.in);
 				System.out.println("What is the password?");
 				int thePass = pass.nextInt();
 				if(thePass == 1234)
-						EmployeeMenu.intialMenu(); // This will call the method to run the rest of the employee code.
+					{
+						// This will call the method to run the rest of the employee code.
+					}
 				else
 					{
 						System.out.println("That is not the right password.");
 						firstQuestion();
 					}
-				}
+					}
 				catch(InputMismatchException exc)
 					{
 						System.out.println("You need to enter a number.");
@@ -44,7 +46,7 @@ public class InitialMenu
 			}
 		else if(eOrB == 0)
 			{
-				searchFunction.search();
+			buyerExperience();
 			}
 		else
 			{
@@ -52,4 +54,7 @@ public class InitialMenu
 				firstQuestion();
 			}
 	}
-}
+	public static void buyerExperience()
+		{
+		ArrayList <Stuff> cart = new ArrayList <Stuff>();
+		}
