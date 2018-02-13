@@ -9,7 +9,7 @@ public class EmployeeMenu
 			try
 			{
 				Scanner employeeIn = new Scanner(System.in);
-				System.out.println("What would you like to look at? \n(1)Orders \n(2)Expences");
+				System.out.println("What would you like to look at? \n(1)Orders \n(2)Expences \n(3)Change Password");
 				decision = employeeIn.nextInt();
 			}
 			catch(InputMismatchException exc)
@@ -21,12 +21,20 @@ public class EmployeeMenu
 					orders();
 			else if(decision == 2)
 					expences();
+			else if(decision == 3)
+					changePass();
 			else
 				{
 					System.out.println("Please enter either 1 or 2");
 					intialMenu();
 				}
 		}
+
+		private static void changePass()
+			{
+				// TODO Auto-generated method stub
+				
+			}
 
 		private static void expences()
 			{
