@@ -1,3 +1,4 @@
+
 import java.util.*;
 
 public class InitialMenu
@@ -58,4 +59,3 @@ public class InitialMenu
 		{
 		ArrayList <Stuff> cart = new ArrayList <Stuff>();
 		}
-}
