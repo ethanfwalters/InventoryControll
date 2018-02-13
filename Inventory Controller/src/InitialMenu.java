@@ -55,7 +55,7 @@ public class InitialMenu
 			}
 	}
 	public static void buyerExperience()
-		{
+		{//work
 		ArrayList <Stuff> cart = new ArrayList <Stuff>();
 		System.out.println("Would you like to ");
 		System.out.println("1). Shop from the inventory");
