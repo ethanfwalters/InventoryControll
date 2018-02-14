@@ -3,10 +3,10 @@ public class Stuff
 	{
 	private int SKU;
 	private String name;
-	private int amount;
-	private int cost;
-	private int sold;
-	private int storeCost;
+	private int amount; //how many we have
+	private int cost; //how much we are paying for it
+	private int sold; // how many we sold
+	private int storeCost; // how much we paid for it
 public Stuff (int s, String n, int a, int c, int so, int sc)
 	{
 	SKU = s;
