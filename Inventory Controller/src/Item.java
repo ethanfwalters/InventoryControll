@@ -1,5 +1,5 @@
 
-public class Stuff
+public class Item
 	{
 	private int SKU;
 	private String name;
@@ -7,7 +7,7 @@ public class Stuff
 	private int cost;
 	private int sold;
 	private int storeCost;
-public Stuff (int s, String n, int a, int c, int so, int sc)
+public Item (int s, String n, int a, int c, int so, int sc)
 	{
 	SKU = s;
 	name = n;
@@ -64,4 +64,5 @@ public void setStoreCost(int storeCost)
 	{
 	this.storeCost = storeCost;
 	}
+
 }

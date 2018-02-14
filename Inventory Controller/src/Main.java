@@ -5,9 +5,9 @@ public class Main
 {
 	public static void main(String [] args) throws IOException 
 	{
+		
+		
 		InitialMenu.firstQuestion();
-		InventoryAdd.addArray();
-		InitialMenu.buyerExperience();
         String fileName = "HereItIs.txt";
 
         
@@ -22,7 +22,7 @@ public class Main
             // Always wrap FileReader in BufferedReader.
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-            while((line = bufferedReader.readLine()) != null) System.out.println(line);
+            //while((line = bufferedReader.readLine()) != null) System.out.println(line);
 
             // Always close files.
             bufferedReader.close();			
