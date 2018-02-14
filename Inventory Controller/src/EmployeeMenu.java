@@ -33,7 +33,7 @@ public class EmployeeMenu
 		private static void expences()
 			{
 				for(int i = 0 ; i < InventoryAdd.inventory.size() ; i++)
-					{
+					{ 
 						int totalCost = InventoryAdd.inventory.get(i).getSold() + InventoryAdd.inventory.get(i).getStoreCost();
 						System.out.println( "For: " + InventoryAdd.inventory.get(i) + " We have sold: " + InventoryAdd.inventory.get(i).getSold() + " And it cost :" + totalCost); 
 					}
