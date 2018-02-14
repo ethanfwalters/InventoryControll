@@ -112,5 +112,6 @@ public class InitialMenu
 			}
 		System.out.println("");
 		System.out.println("Your total is $" + total);
+		System.exit(0);
 		}
 	}

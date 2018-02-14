@@ -12,7 +12,7 @@ public class searchFunction
 			System.out.println("Hello! Anything you would like to search for today?");
 			String person = user.nextLine();
 
-			int counter = 1;
+			int counter = 0;
 			for(int i = 0; i < InventoryAdd.inventory.size(); i++)
 				{
 				if(InventoryAdd.inventory.get(i).getName().toLowerCase().contains(person))
@@ -22,6 +22,11 @@ public class searchFunction
 					System.out.println("");
 					counter++;
 					}
+				}
+			if (counter == 0)
+				{
+				System.out.println("We don't have that. You're clearly a hooligan. You have been locked out. Goodbye");
+				InitialMenu.checkout();
 				}
 			
 			}
