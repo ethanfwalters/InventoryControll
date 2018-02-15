@@ -1,5 +1,5 @@
 
-public class Stuff
+public class Item
 	{
 	private int SKU;
 	private String name;
@@ -7,7 +7,7 @@ public class Stuff
 	private int cost; //how much we are paying for it
 	private int sold; // how many we sold
 	private int storeCost; // how much we paid for it
-public Stuff (int s, String n, int a, int c, int so, int sc)
+public Item (int s, String n, int a, int c, int so, int sc)
 	{
 	SKU = s;
 	name = n;

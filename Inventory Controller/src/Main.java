@@ -5,10 +5,17 @@ public class Main
 {
 	public static void main(String [] args) throws IOException 
 	{
+		
+		readFile();
+		System.out.println(InventoryAdd.inventory.size());
 		InitialMenu.firstQuestion();
 		InventoryAdd.addArray();
 		InitialMenu.buyerExperience();
-        String fileName = "HereItIs.txt";
+            
+    }
+	public static void readFile()
+	{
+		String fileName = "HereItIs.txt";
 
         
         // This will reference one line at a time
@@ -38,6 +45,6 @@ public class Main
             // Or we could just do this: 
             // ex.printStackTrace();
         }  
-        //test    
-    }
+        //test
+	}
 }
