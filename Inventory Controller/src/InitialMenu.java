@@ -73,6 +73,7 @@ public class InitialMenu
 			int choice1 = userIn1.nextInt();
 			cart.add(InventoryAdd.inventory.get(choice1 - 1));
 			InventoryAdd.inventory.get(choice1 -1).setAmount(InventoryAdd.inventory.get(choice1-1 ).getAmount() - 1);
+			InventoryAdd.inventory.get(choice1 - 1).setSold(InventoryAdd.inventory.get(choice1 - 1).getAmount() + 1);
 			shopChoice();
 			}
 		else 
@@ -82,6 +83,7 @@ public class InitialMenu
 			int choice1 = userIn1.nextInt();
 			cart.add(InventoryAdd.inventory.get(choice1-1));
 			InventoryAdd.inventory.get(choice1-1).setAmount(InventoryAdd.inventory.get(choice1-1).getAmount() - 1);
+			InventoryAdd.inventory.get(choice1 - 1).setSold(InventoryAdd.inventory.get(choice1 - 1).getAmount() + 1);
 			shopChoice();
 			}
 		}
