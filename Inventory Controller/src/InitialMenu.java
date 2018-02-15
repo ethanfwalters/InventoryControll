@@ -1,12 +1,14 @@
 import java.io.IOException;
 import java.util.*;
+import java.io.*;
 
 public class InitialMenu
 	{
 		public static int eOrB;
-	public static void firstQuestion() 
+		static ArrayList <Item> cart = new ArrayList <Item>();
+	public static void firstQuestion() throws IOException
 	{
-		
+	InventoryAdd.addArray();
 		try
 		{
 			Scanner userIn = new Scanner(System.in);
@@ -21,7 +23,7 @@ public class InitialMenu
 		}
 		
 	}
-	public static void checkEOrB() 
+	public static void checkEOrB() throws IOException
 	{
 		if(eOrB == 1)
 			{
@@ -56,10 +58,61 @@ public class InitialMenu
 				firstQuestion();
 			}
 	}
-	
-	
-	public static void buyerExperience()
+	public static void buyerExperience() throws IOException
+		{//work
+		
+		System.out.println("Would you like to ");
+		System.out.println("1). Shop from the inventory");
+		System.out.println("2). Search our database");
+		Scanner userIn = new Scanner(System.in);
+		int choice = userIn.nextInt();
+		if (choice == 1)
+			{
+			InventoryAdd.printInventory();
+			Scanner userIn1 = new Scanner(System.in);
+			int choice1 = userIn1.nextInt();
+			cart.add(InventoryAdd.inventory.get(choice1 - 1));
+			InventoryAdd.inventory.get(choice1 -1).setAmount(InventoryAdd.inventory.get(choice1-1 ).getAmount() - 1);
+			shopChoice();
+			}
+		else 
+			{
+			searchFunction.illSearch();
+			Scanner userIn1 = new Scanner(System.in);
+			int choice1 = userIn1.nextInt();
+			cart.add(InventoryAdd.inventory.get(choice1-1));
+			InventoryAdd.inventory.get(choice1-1).setAmount(InventoryAdd.inventory.get(choice1-1).getAmount() - 1);
+			shopChoice();
+			}
+		}
+	public static void shopChoice() throws IOException
 		{
-		ArrayList <Item> cart = new ArrayList <Item>();
+		System.out.println("Would you like to continue shopping?");
+		System.out.println("1). Yes");
+		System.out.println("2). No");
+		Scanner userIn1 = new Scanner(System.in);
+		int choice1 = userIn1.nextInt();
+		if (choice1 == 1)
+			{
+			buyerExperience();
+			}
+		else 
+			{
+			checkout();
+			}
+		}
+	public static void checkout()
+		{
+		System.out.println("You are buying");
+		System.out.println("");
+		int total = 0;
+		for(int i = 0; i < cart.size(); i++)
+			{
+			System.out.println(cart.get(i).getName());
+			total = total + cart.get(i).getCost();
+			}
+		System.out.println("");
+		System.out.println("Your total is $" + total);
+		System.exit(0);
 		}
 	}

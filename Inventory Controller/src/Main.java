@@ -6,16 +6,8 @@ public class Main
 	public static void main(String [] args) throws IOException 
 	{
 		
-		readFile();
-		System.out.println(InventoryAdd.inventory.size());
 		InitialMenu.firstQuestion();
-		InventoryAdd.addArray();
-		InitialMenu.buyerExperience();
-            
-    }
-	public static void readFile()
-	{
-		String fileName = "HereItIs.txt";
+        String fileName = "HereItIs.txt";
 
         
         // This will reference one line at a time
@@ -29,7 +21,7 @@ public class Main
             // Always wrap FileReader in BufferedReader.
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 
-            while((line = bufferedReader.readLine()) != null) System.out.println(line);
+            //while((line = bufferedReader.readLine()) != null) System.out.println(line);
 
             // Always close files.
             bufferedReader.close();			

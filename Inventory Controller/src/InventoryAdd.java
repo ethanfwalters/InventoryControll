@@ -12,7 +12,16 @@ public class InventoryAdd
 			String line = file.nextLine();
 			String[] arr = line.split(" ");
 			arr[1] = arr[1].replaceAll("[^\\p{L}\\p{Nd}]+", " ");
-			inventory.add(new Item(Integer.valueOf(arr[0]), arr[1], Integer.valueOf(arr[2]), Integer.valueOf(arr[3]), 0, 0));
+			inventory.add(new Item(Integer.valueOf(arr[0]), arr[1], Integer.valueOf(arr[2]), Integer.valueOf(arr[3]), 0, Integer.valueOf(arr[4])));
+			}
+		}
+	public static void printInventory()
+		{
+		for (int i = 0; i < inventory.size(); i++)
+			{
+			System.out.println((i + 1) + "). " + inventory.get(i).getName());
+			System.out.println("    $" + inventory.get(i).getCost());
+			System.out.println("");
 			}
 		}
 	}
