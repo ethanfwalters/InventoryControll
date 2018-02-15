@@ -1,10 +1,1 @@
-8675309 12-pack-Nuke 36 15 5
-8008555 Cats-in-bulk 27 25
-5558008 101-Dalmations 101 25 
-2876550 Pallet-of-Cake 67 30
-5425688 Ocean-of-HiC 55 30
-2443425 Shipping-crate-of-ramen-noodles 89 10
-2255722 66-portals-to-Narnia 9 35
-4638669 99-Bottles-of-Beer-on-the-Wall 83 5
-2276373 Way-to-many-Wacky-Waving-Inflatable-Arm-Flailing-Tubemen 96 12
-4695263 4-pack-of-As-on-a-certain-CompSci-project-which-shall-remain-nameless 4 20
+

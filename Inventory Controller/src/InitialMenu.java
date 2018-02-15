@@ -1,10 +1,12 @@
+import java.io.IOException;
 import java.util.*;
 
 public class InitialMenu
 	{
 		public static int eOrB;
-	public static void firstQuestion()
+	public static void firstQuestion() 
 	{
+		
 		try
 		{
 			Scanner userIn = new Scanner(System.in);
@@ -19,7 +21,7 @@ public class InitialMenu
 		}
 		
 	}
-	public static void checkEOrB()
+	public static void checkEOrB() 
 	{
 		if(eOrB == 1)
 			{
@@ -30,7 +32,7 @@ public class InitialMenu
 				int thePass = pass.nextInt();
 				if(thePass == 1234)
 					{
-						// This will call the method to run the rest of the employee code.
+						EmployeeMenu.initialMenu(); // This will call the method to run the rest of the employee code.
 					}
 				else
 					{
@@ -54,7 +56,10 @@ public class InitialMenu
 				firstQuestion();
 			}
 	}
+	
+	
 	public static void buyerExperience()
 		{
-		ArrayList <Stuff> cart = new ArrayList <Stuff>();
+		ArrayList <Item> cart = new ArrayList <Item>();
 		}
+	}
