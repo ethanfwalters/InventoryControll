@@ -6,7 +6,6 @@ public class Main
 	public static void main(String [] args) throws IOException 
 	{
 		
-		
 		InitialMenu.firstQuestion();
         String fileName = "HereItIs.txt";
 
@@ -38,6 +37,6 @@ public class Main
             // Or we could just do this: 
             // ex.printStackTrace();
         }  
-        //test    
-    }
+        //test
+	}
 }

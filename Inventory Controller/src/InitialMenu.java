@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.*;
 import java.io.*;
 
@@ -33,7 +34,7 @@ public class InitialMenu
 				int thePass = pass.nextInt();
 				if(thePass == 1234)
 					{
-						// This will call the method to run the rest of the employee code.
+						EmployeeMenu.initialMenu(); // This will call the method to run the rest of the employee code.
 					}
 				else
 					{
