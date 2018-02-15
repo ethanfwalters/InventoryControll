@@ -1,9 +1,10 @@
 
+import java.io.IOException;
 import java.util.*;
 
 public class EmployeeMenu
 	{
-		public static void initialMenu()
+		public static void initialMenu() throws IOException
 		{
 			int decision = 0;
 			try
@@ -30,7 +31,7 @@ public class EmployeeMenu
 				}
 		}
 
-		private static void expences()
+		private static void expences() throws IOException
 			{
 				for(int i = 0 ; i < InventoryAdd.inventory.size() ; i++)
 					{ 
@@ -42,7 +43,7 @@ public class EmployeeMenu
 				
 			}
 
-		private static void orders()
+		private static void orders() throws IOException
 			{
 				System.out.println();
 				for(int i = 0 ; i < InventoryAdd.inventory.size() ; i++)
